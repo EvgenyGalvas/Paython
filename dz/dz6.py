@@ -23,10 +23,12 @@ from random import randint
 # Задача 2
 
 arr = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]]
-# for row in range(len(arr)):
-#     print(arr[row])
-
 for row in arr:
-    for x in row:
-        print(x, end="\t")
-    print()
+    print(row)
+print()
+new_arr = [[0]*(len(arr)) for x in (arr[0])]
+for i in range(len(arr)):
+    for j in range(len(arr[0])):
+        new_arr[j][i] = arr[i][j]
+for row in new_arr:
+    print(row)

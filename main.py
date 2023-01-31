@@ -3227,5 +3227,8 @@ s = "hello, WORLD! I am learning Python."
 # print('123'.isdigit())  # состоит ли строка из цифр
 # print('123#a'.isdigit())
 
-a = 5
-print(a)
+# a = 5
+# print(a)
+
+
+print("У меня получилось")

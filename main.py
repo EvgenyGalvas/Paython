@@ -3177,7 +3177,7 @@ from random import randint
 
 # print(dir(str))
 
-s = "hello, WORLD! I am learning Python."
+# s = "hello, WORLD! I am learning Python."
 # print(s.capitalize())  # Hello, world! i am learning python.
 # print(s.lower())  # hello, world! i am learning python.
 # print(s.upper())  # HELLO, WORLD! I AM LEARNING PYTHON.
@@ -3231,4 +3231,83 @@ s = "hello, WORLD! I am learning Python."
 # print(a)
 
 
-print("У меня получилось")
+# print("У меня получилось")
+
+# s = "-"
+# seq = ('a', 'b', 'c')
+# print(s.join(seq))
+#
+# print("..".join(['10,99']))
+# print(":".join('Hello'))
+
+# a = input("-> ").split()
+# a=list(map(int,a))
+# print(a)
+
+# a = input('ФИО: ').split()
+# print(a)
+# print(f'{a[0]} {a[1][0]}. {a[2][0]}.')
+
+# Регулярные выражения
+
+import re
+
+
+# print(dir(re))
+
+# s = "Я ищу совпадения в 2023 году. И я их найду их в 2 счёта."
+# reg = "Я ищу"
+# print(re.findall(reg, s))
+# print(re.search(reg, s))
+# # print(re.search(reg, s).span())
+# # print(re.search(reg, s).start())
+# # print(re.search(reg, s).end())
+# # print(re.search(reg, s).group())
+# print(re.match(reg, s))
+#
+# reg = r'\.'
+# print(re.split(reg, s, )[:-1])
+# print(re.sub(reg, "!", s, 1))
+
+# s = "Я ищу совпадения в 2023 году. И я их найду их в 2 - счёта.[87_998]"
+# reg = r"[А-яЁё.\[\]-]"
+# reg = r"[^А-я]"
+# print(re.findall(reg, s))
+# print(ord("Я"))
+# print(ord("Е"))
+# print(ord("Ё"))
+
+# s1 = "Час в 24-часовом формате от 0 до 23. 2021-0615T21:58. Минуты, в диапазоне от 00 до 59. 2021-0615Т01:09."
+
+
+# rg = r'[0-2][0-9]:[0-5][0-9]'
+# print(re.findall(rg, s1))
+
+# reg = r'\w'
+# print(re.findall(reg, s))
+
+# Рекурсия
+
+# def elevator(n):
+#     if n == 0:
+#         print("Вы в подвале")
+#         return
+#     print("=>", n)
+#     elevator(n - 1)
+#     print(n, end=" ")
+#
+#
+# n1 = int(input("На каком Вы этаже: "))
+# elevator(n1)
+
+# def to_str(n, base):
+#     convert = "0123456789"
+#     if n<base:
+#         return convert[n]
+#     else:
+#         return to_str(n // base, base)+convert[n%base]
+#
+#
+# print(to_str(123, 10))
+
+

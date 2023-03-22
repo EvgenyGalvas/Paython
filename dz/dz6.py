@@ -36,37 +36,37 @@ from random import randint
 # Задача №3
 
 
-# a = [[randint(0, 10) for i in range(6)] for i in range(6)]
-# for row in a:
-#     for x in row:
-#         print(x, end="\t")
-#     print()
-# b = [randint(0, 10) for i in range(6)]
-#
-# print()
-# print(b)
-# print()
-# for i in range(6):
-#     if i % 2 == 0:
-#         a[i] = b
-#
-# for row in a:
-#     for x in row:
-#         print(x, end="\t")
-#     print()
-
-# Задача №4
 a = [[randint(0, 10) for i in range(6)] for i in range(6)]
 for row in a:
     for x in row:
         print(x, end="\t")
     print()
+b = [randint(0, 10) for i in range(6)]
+
 print()
-new_arr = [[0] * (len(a)) for x in (a[0])]
-new_arr[0], new_arr[2], new_arr[4] = a[1], a[3], a[5]
-new_arr[1], new_arr[3], new_arr[5] = a[0], a[2], a[4]
+print(b)
 print()
-for row in new_arr:
+for i in range(6):
+    if i % 2 == 0:
+        a[i] = b
+
+for row in a:
     for x in row:
         print(x, end="\t")
     print()
+
+# Задача №4
+# a = [[randint(0, 10) for i in range(6)] for i in range(6)]
+# for row in a:
+#     for x in row:
+#         print(x, end="\t")
+#     print()
+# print()
+# new_arr = [[0] * (len(a)) for x in (a[0])]
+# new_arr[0], new_arr[2], new_arr[4] = a[1], a[3], a[5]
+# new_arr[1], new_arr[3], new_arr[5] = a[0], a[2], a[4]
+# print()
+# for row in new_arr:
+#     for x in row:
+#         print(x, end="\t")
+#     print()

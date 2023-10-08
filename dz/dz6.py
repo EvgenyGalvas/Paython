@@ -1,4 +1,4 @@
-import math
+import geometry
 from random import randint
 
 # Задача 1
@@ -10,14 +10,14 @@ from random import randint
 #     b = float(input("Введите сторону b = "))
 #     c = float(input("Введите сторону c = "))
 #     p = (a + b + c) / 2
-#     s = math.sqrt((p * (p - a) * (p - b) * (p - c)))
+#     s = geometry.sqrt((p * (p - a) * (p - b) * (p - c)))
 # elif form == 2:
 #     a = float(input("Введите сторону a = "))
 #     b = float(input("Введите сторону b = "))
 #     s = a * b
 # elif form == 3:
 #     r = float(input("Введите радиус r = "))
-#     s = math.pi * (r ** 2)
+#     s = geometry.pi * (r ** 2)
 # print("Площадь фигуры = ", s)
 
 # Задача 2
